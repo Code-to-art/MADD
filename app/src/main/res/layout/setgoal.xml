@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="211dp"
+        android:layout_height="60dp"
+        android:text="SET"
+        android:textSize="30dp"
+        android:background="@drawable/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        app:srcCompat="@drawable/shadow_card"
+        />
+
+
+    <TextView
+        android:id="@+id/watertraker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water Tracker"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/arow"
+        android:outlineSpotShadowColor="@color/black"
+        android:elevation="10dp"
+        android:padding="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bell"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="340dp"
+        tools:layout_editor_absoluteY="80dp"
+        android:background="@drawable/belll"
+        android:outlineSpotShadowColor="@color/black"
+        android:elevation="10dp"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="414dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/containert"
+        />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Goal"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <ImageView
+        android:id="@+id/goalsetting"
+        android:layout_width="415dp"
+        android:layout_height="60dp"
+        android:paddingHorizontal="10dp"
+        app:srcCompat="@drawable/goalset"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="295dp"
+        android:foregroundGravity="center"
+        android:outlineSpotShadowColor="@color/black"
+        />
+
+
+
+
+    <ImageView
+
+        android:id="@+id/message"
+        android:layout_width="415dp"
+        android:layout_height="150dp"
+        android:paddingHorizontal="10dp"
+        app:srcCompat="@drawable/message"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="395dp"
+        android:foregroundGravity="center"
+        android:outlineSpotShadowColor="@color/black" />
+
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="276dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bulb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="355dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="450dp"
+            android:background="#1c00be" />
+
+
+
+        <TextView
+            android:id="@+id/male"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male         3700 ml    (16 cups)"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+           android:layout_marginLeft="90dp"
+            android:paddingHorizontal="10dp"/>
+
+
+
+        <TextView
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female     2700 ml    (11 cups)"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="90dp"
+            android:paddingHorizontal="10dp"/>
+
+
+        <TextView
+            android:id="@+id/note"
+
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="50dp"
+            android:paddingHorizontal="10dp"
+            android:text="By :National Academies of Sciences, Engineering, and Medicine"
+            android:textColor="	#FF0000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/milli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ml"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="295dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="299dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
