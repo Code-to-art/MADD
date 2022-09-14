@@ -10,18 +10,25 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="211dp"
-        android:layout_height="60dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="41dp"
         android:background="@drawable/button"
         android:text="SET"
         android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="630dp" />
+        app:layout_constraintTop_toBottomOf="@+id/message" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="match_parent"
-        android:layout_height="145dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="108dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/watertraker"
+        app:layout_constraintStart_toEndOf="@+id/watertraker"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/shadow_card" />
 
 
@@ -29,19 +36,25 @@
         android:id="@+id/watertraker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="113dp"
         android:text="Water Tracker"
         android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bell"
         app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="78dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/arrow"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/arow"
@@ -53,23 +66,25 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bell"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="26dp"
         android:layout_weight="1"
         android:background="@drawable/belll"
         android:elevation="10dp"
         android:outlineSpotShadowColor="@color/black"
         android:padding="10dp"
-        tools:layout_editor_absoluteX="340dp"
-        tools:layout_editor_absoluteY="80dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/watertraker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/watertraker" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="414dp"
-        android:layout_height="500dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/watertraker"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/containert" />
 
@@ -78,45 +93,53 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="Set Goal"
         android:textColor="@color/black"
         android:textSize="25dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/milli"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="253dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <ImageView
         android:id="@+id/goalsetting"
         android:layout_width="415dp"
         android:layout_height="60dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="40dp"
         android:foregroundGravity="center"
         android:outlineSpotShadowColor="@color/black"
         android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/message"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/goalset"
-        tools:layout_editor_absoluteY="295dp" />
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:srcCompat="@drawable/goalset" />
 
 
     <ImageView
 
         android:id="@+id/message"
         android:layout_width="415dp"
-        android:layout_height="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="85dp"
         android:foregroundGravity="center"
         android:outlineSpotShadowColor="@color/black"
         android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/message"
-        tools:layout_editor_absoluteY="395dp" />
+        app:layout_constraintTop_toBottomOf="@+id/milli"
+        app:srcCompat="@drawable/message" />
 
 
     <ImageView
+        android:id="@+id/imageView8"
         android:layout_width="56dp"
         android:layout_height="53dp"
         android:layout_marginBottom="276dp"
@@ -127,9 +150,14 @@
         app:srcCompat="@drawable/bulb" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:id="@+id/linearLayout3"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/watertraker"
+        app:layout_constraintStart_toEndOf="@+id/watertraker"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <View
@@ -185,14 +213,16 @@
         android:id="@+id/milli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
         android:text="ml"
         android:textColor="@color/black"
         android:textSize="35dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/message"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="295dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal"
@@ -200,9 +230,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/milli"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="299dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
