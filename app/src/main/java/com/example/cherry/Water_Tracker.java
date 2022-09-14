@@ -1,6 +1,7 @@
 package com.example.cherry;
 
 import android.os.Bundle;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +10,11 @@ import java.text.DateFormat;
 import java.util.Calendar;
 
 public class Water_Tracker extends AppCompatActivity {
+
+    ProgressBar progressBar;
+    TextView textView;
+    int value=0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

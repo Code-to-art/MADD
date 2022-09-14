@@ -5,149 +5,247 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/shape"
-    tools:context=".MainActivity" ><![CDATA[
+    tools:context=".MainActivity"><![CDATA[
 
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    ]]>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+
+
+        ]]>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="-153dp">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="33dp"
-                android:layout_height="38dp"
-                android:layout_marginTop="36dp"
-                android:layout_marginEnd="360dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/hum" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="174dp"
-                android:layout_height="159dp"
-                android:layout_marginTop="80dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.493"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/yoga_logo" />
-
-            <TextView
-                android:id="@+id/welcome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Welcome"
-                android:textColor="@color/black"
-                android:textSize="30dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="34dp" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="414dp"
-                android:layout_height="470dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/containert" />
+                <!--        <ImageView-->
+                <!--            android:id="@+id/imageView"-->
+                <!--            android:layout_width="33dp"-->
+                <!--            android:layout_height="38dp"-->
+                <!--            android:layout_marginTop="32dp"-->
+                <!--            android:layout_marginEnd="92dp"-->
+                <!--            app:layout_constraintEnd_toStartOf="@+id/welcome"-->
+                <!--            app:layout_constraintTop_toTopOf="parent"-->
+                <!--            app:srcCompat="@drawable/hum" />-->
 
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button6"
-                android:layout_width="167dp"
-                android:layout_height="164dp"
-                android:layout_weight="2"
-                android:background="@drawable/nuetri"
-                tools:layout_editor_absoluteX="32dp"
-                tools:layout_editor_absoluteY="517dp" />
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/vecup"
+                    tools:layout_editor_absoluteY="-140dp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="174dp"
+                    android:layout_height="159dp"
+                    android:layout_marginTop="80dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/yoga_logo" />
 
 
+                <ImageView
+                    android:id="@+id/box"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="320dp"
+                    app:layout_constraintBottom_toTopOf="@+id/box3"
+                    app:layout_constraintEnd_toStartOf="@+id/box2"
+                    app:layout_constraintHorizontal_bias="0.613"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/frame" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button5"
-                android:layout_width="168dp"
-                android:layout_height="176dp"
-                android:layout_weight="1"
-                tools:layout_editor_absoluteX="32dp"
-                tools:layout_editor_absoluteY="287dp"
-                android:background="@drawable/woman"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button4"
-                android:layout_width="168dp"
-                android:layout_height="176dp"
-                android:layout_weight="1"
-                android:background="@drawable/wei"
-                android:text="Button"
-                tools:layout_editor_absoluteX="218dp"
-                tools:layout_editor_absoluteY="505dp" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button3"
-                android:layout_width="168dp"
-                android:layout_height="176dp"
-                android:layout_weight="1"
-                tools:layout_editor_absoluteX="218dp"
-                tools:layout_editor_absoluteY="287dp"
-                android:background="@drawable/water"/>
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Exercise"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="92dp"
-                tools:layout_editor_absoluteY="475dp" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="Nutrition"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                tools:layout_editor_absoluteX="90dp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Water Tracker"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="259dp"
-            tools:layout_editor_absoluteY="475dp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="Weight Tracker"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="253dp" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/box3"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="530dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.117"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/frame" />
 
 
+                <ImageView
+                    android:id="@+id/box4"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="528dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.708"
+                    app:layout_constraintStart_toEndOf="@+id/box3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/frame" />
 
 
+                <ImageView
+                    android:id="@+id/box2"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="320dp"
+                    app:layout_constraintBottom_toTopOf="@+id/box4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.969"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/frame" />
+
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Welcome"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
 
 
+                <!--
+app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+-->
 
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button6"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/nutrition"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.22"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button5"
+                    app:layout_constraintVertical_bias="0.594"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button5"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/exercisenew"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button3"
+                    app:layout_constraintHorizontal_bias="0.412"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.55"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button4"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/weightscale"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.674"
+                    app:layout_constraintStart_toEndOf="@+id/button6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.911"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button3"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="225dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dropnew"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/box"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.564"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exercise"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/button6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.249"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button5"
+                    app:layout_constraintVertical_bias="0.135"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nutrition"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.251"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button6"
+                    app:layout_constraintVertical_bias="0.105"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water Tracker"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/button4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.838"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button3"
+                    app:layout_constraintVertical_bias="0.126"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Weight Tracker"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.856"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button4"
+                    app:layout_constraintVertical_bias="0.217"
+                    tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
