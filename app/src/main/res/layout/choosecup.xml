@@ -114,8 +114,8 @@
         android:layout_height="110dp"
         android:layout_weight="1"
         android:background="@drawable/cup2"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="310dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/button5"
+        tools:layout_editor_absoluteX="140dp" />
 
 
     <androidx.appcompat.widget.AppCompatButton
@@ -191,10 +191,10 @@
         android:textColor="@color/black"
         android:textSize="15dp"
         android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/two"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.900"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="410dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <TextView
@@ -239,9 +239,9 @@
         tools:layout_editor_absoluteY="585dp" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
-        android:layout_width="211dp"
+        android:layout_width="341dp"
         android:layout_height="60dp"
         android:layout_marginBottom="41dp"
         android:background="@drawable/button"

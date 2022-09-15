@@ -1,27 +1,25 @@
 package com.example.cherry;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class MainActivity extends AppCompatActivity {
-
-    public Button button;
+public class Water_Tracker2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_water_tracker2);
 
-        button=(Button) findViewById(R.id.water);
+        Button button2;
+        button2=(Button) findViewById(R.id.glass);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,Water_Tracker2.class);
+                Intent intent=new Intent(Water_Tracker2.this,ChooseCup2.class);
                 startActivity(intent);
 
             }
